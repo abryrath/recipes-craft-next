@@ -1,0 +1,140 @@
+field: 7cb11227-0282-43c2-bf1b-9dffdfd2bcce # Ingredient List
+fieldLayouts:
+  c6c44926-ae31-419d-a9b7-329b6327f4f5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bd39be8c-03d2-4839-8f3a-a201b9060feb # Ingredient
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 393b3614-4a19-445b-ad84-aa7b1a20df1e # Amount
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6e395fd9-535e-4405-a13f-cad6188a386f # Units
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6e395fd9-535e-4405-a13f-cad6188a386f: # Units
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: units
+    instructions: ''
+    name: Units
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Ounce
+            -
+              - value
+              - ounce
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Grams
+            -
+              - value
+              - grams
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Pounds
+            -
+              - value
+              - pounds
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - N/A
+            -
+              - value
+              - notApplicable
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  393b3614-4a19-445b-ad84-aa7b1a20df1e: # Amount
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: amount
+    instructions: ''
+    name: Amount
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bd39be8c-03d2-4839-8f3a-a201b9060feb: # Ingredient
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ingredient
+    instructions: ''
+    name: Ingredient
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:25d1ceb4-d63e-470e-9149-e7bf07e1481e' # Ingredients
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: weightIngredient
+name: 'Weight Ingredient'
+sortOrder: 2

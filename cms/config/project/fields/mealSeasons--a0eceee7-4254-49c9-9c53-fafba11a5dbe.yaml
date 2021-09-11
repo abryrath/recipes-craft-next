@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 69d0ce7b-6cbe-4958-a5e6-c684115c9bbd # Meal Categorization
+handle: mealSeasons
+instructions: ''
+name: 'Meal Seasons'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:c75b5e36-4248-4b91-a5ec-4a22ee3efa80' # Meal Seasons
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

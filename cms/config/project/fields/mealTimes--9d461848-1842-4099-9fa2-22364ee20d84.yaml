@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 69d0ce7b-6cbe-4958-a5e6-c684115c9bbd # Meal Categorization
+handle: mealTimes
+instructions: ''
+name: 'Meal Times'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:20617bbb-1b72-4f52-ac7c-b167e18fb159' # Meal Times
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

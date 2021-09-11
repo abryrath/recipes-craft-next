@@ -1,0 +1,54 @@
+version: "3.7"
+
+# Site Directory
+# ~/Union/Sites/rta
+
+services:
+  php-fpm:
+    build:
+      context: ./php-fpm
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./cms:/app
+      - ./php-fpm/craft-cms-xdebug.ini:/usr/local/etc/php/conf.d/craft-cms-xdebug-override.ini
+      - ./php-fpm/pool-extras.conf:/usr/local/etc/php-fpm.d/pool-extras.conf
+    env_file: ./cms/.env
+    environment:
+      PHP_OPCACHE_ENABLE: 1
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+      args:
+        domain: cms.recipes.dev
+    ports:
+      - 80:80
+      - 443:443    
+    volumes:
+      - ./nginx/domain.com.conf:/etc/nginx/conf.d/default.conf
+      - ./cms:/app
+  console:
+    build:
+      context: ./php-console
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./cms:/app
+    env_file: ./cms/.env
+    depends_on:
+      - "mysql"
+    command: ["./craft", "queue/listen"]
+    environment:
+      PHP_OPCACHE_ENABLE: 0
+  mysql:
+    image: mysql:8.0
+    ports:
+      - 3336:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: dev_recipes_craft
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: secret
+    volumes:
+      - union_db:/var/lib/mysql
+volumes:
+  union_db:

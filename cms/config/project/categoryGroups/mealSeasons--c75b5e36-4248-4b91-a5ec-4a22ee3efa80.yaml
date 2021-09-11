@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  9deadd9b-71bd-4fa0-bcdc-c4d16d755ce4:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: mealSeasons
+name: 'Meal Seasons'
+siteSettings:
+  6e2d25df-7769-4b54-ab25-4bb36302500d: # Recipes
+    hasUrls: true
+    template: null
+    uriFormat: 'meal-seasons/{slug}'
+structure:
+  maxLevels: null
+  uid: 43bc76ae-a361-4bec-90aa-2c8e9860f4bb

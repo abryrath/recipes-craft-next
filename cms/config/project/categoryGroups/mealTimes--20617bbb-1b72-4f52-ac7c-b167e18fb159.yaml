@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  dfc48438-f312-4320-bfc2-e5eb2cb0c0c5:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: mealTimes
+name: 'Meal Times'
+siteSettings:
+  6e2d25df-7769-4b54-ab25-4bb36302500d: # Recipes
+    hasUrls: true
+    template: null
+    uriFormat: 'meal-times/{slug}'
+structure:
+  maxLevels: 1
+  uid: 75ff0dfe-9ec3-40dd-9cfd-62793de21770

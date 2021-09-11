@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: ingredients
+name: Ingredients
+propagationMethod: all
+siteSettings:
+  6e2d25df-7769-4b54-ab25-4bb36302500d: # Recipes
+    enabledByDefault: true
+    hasUrls: true
+    template: ingredients/_entry
+    uriFormat: 'ingredients/{slug}'
+type: channel

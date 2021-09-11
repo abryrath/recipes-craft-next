@@ -1,0 +1,33 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.25d1ceb4-d63e-470e-9149-e7bf07e1481e:read' # Ingredients
+  - 'entrytypes.fab1f74a-6622-488f-ada5-11f720ca156e:read' # Default
+  - 'sections.ac78feee-0235-4739-a530-b0b76293deaf:read' # Recipes
+  - 'entrytypes.555ef10e-e1c7-411b-9772-ced8bf292d86:read' # Default
+  - 'usergroups.everyone:read'
+  - 'categorygroups.36603fe6-3b71-4982-9e34-62d903aee2f0:read' # Meal Categories
+  - 'categorygroups.c75b5e36-4248-4b91-a5ec-4a22ee3efa80:read' # Meal Seasons
+  - 'categorygroups.20617bbb-1b72-4f52-ac7c-b167e18fb159:read' # Meal Times
+  - 'sections.25d1ceb4-d63e-470e-9149-e7bf07e1481e:edit' # Ingredients
+  - 'entrytypes.fab1f74a-6622-488f-ada5-11f720ca156e:edit' # Default
+  - 'entrytypes.fab1f74a-6622-488f-ada5-11f720ca156e:create' # Default
+  - 'entrytypes.fab1f74a-6622-488f-ada5-11f720ca156e:save' # Default
+  - 'entrytypes.fab1f74a-6622-488f-ada5-11f720ca156e:delete' # Default
+  - 'sections.ac78feee-0235-4739-a530-b0b76293deaf:edit' # Recipes
+  - 'entrytypes.555ef10e-e1c7-411b-9772-ced8bf292d86:edit' # Default
+  - 'entrytypes.555ef10e-e1c7-411b-9772-ced8bf292d86:create' # Default
+  - 'entrytypes.555ef10e-e1c7-411b-9772-ced8bf292d86:save' # Default
+  - 'entrytypes.555ef10e-e1c7-411b-9772-ced8bf292d86:delete' # Default
+  - 'categorygroups.36603fe6-3b71-4982-9e34-62d903aee2f0:edit' # Meal Categories
+  - 'categorygroups.36603fe6-3b71-4982-9e34-62d903aee2f0:save' # Meal Categories
+  - 'categorygroups.36603fe6-3b71-4982-9e34-62d903aee2f0:delete' # Meal Categories
+  - 'categorygroups.c75b5e36-4248-4b91-a5ec-4a22ee3efa80:edit' # Meal Seasons
+  - 'categorygroups.c75b5e36-4248-4b91-a5ec-4a22ee3efa80:save' # Meal Seasons
+  - 'categorygroups.c75b5e36-4248-4b91-a5ec-4a22ee3efa80:delete' # Meal Seasons
+  - 'categorygroups.20617bbb-1b72-4f52-ac7c-b167e18fb159:edit' # Meal Times
+  - 'categorygroups.20617bbb-1b72-4f52-ac7c-b167e18fb159:save' # Meal Times
+  - 'categorygroups.20617bbb-1b72-4f52-ac7c-b167e18fb159:delete' # Meal Times

@@ -1,0 +1,151 @@
+field: 7cb11227-0282-43c2-bf1b-9dffdfd2bcce # Ingredient List
+fieldLayouts:
+  e80e82aa-8697-4e76-a1f4-a31c83bd59e0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e3be41ee-b92f-4c00-8b1e-e3352519269a # Ingredient
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e61e9c58-68c1-4cfd-8ee6-987302b188f6 # Amount
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0b378b2e-772c-4f9f-88ce-2c622f66cc69 # Units
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0b378b2e-772c-4f9f-88ce-2c622f66cc69: # Units
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: units
+    instructions: ''
+    name: Units
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Teaspoon
+            -
+              - value
+              - teaspoon
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Tablespoon
+            -
+              - value
+              - tablespoon
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Cup
+            -
+              - value
+              - cup
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Liquid Ounce'
+            -
+              - value
+              - liquidOunce
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - N/A
+            -
+              - value
+              - notApplicable
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  e3be41ee-b92f-4c00-8b1e-e3352519269a: # Ingredient
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ingredient
+    instructions: ''
+    name: Ingredient
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:25d1ceb4-d63e-470e-9149-e7bf07e1481e' # Ingredients
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  e61e9c58-68c1-4cfd-8ee6-987302b188f6: # Amount
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: amount
+    instructions: ''
+    name: Amount
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: volumeIngredient
+name: 'Volume Ingredient'
+sortOrder: 1

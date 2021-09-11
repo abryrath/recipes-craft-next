@@ -1,0 +1,102 @@
+field: 7cb11227-0282-43c2-bf1b-9dffdfd2bcce # Ingredient List
+fieldLayouts:
+  9e865f58-3f07-44cb-8b2f-b1ed171a7504:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 33bf66e5-37aa-4f6e-9391-2bc4aa2f3b9d # Ingredient
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6013948d-10ef-464b-965a-1e9662577afb # Amount
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 49967c47-7fc0-4ac4-8510-4956009cba1a # Unit Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  33bf66e5-37aa-4f6e-9391-2bc4aa2f3b9d: # Ingredient
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ingredient
+    instructions: ''
+    name: Ingredient
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:25d1ceb4-d63e-470e-9149-e7bf07e1481e' # Ingredients
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  49967c47-7fc0-4ac4-8510-4956009cba1a: # Unit Name
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: unitName
+    instructions: ''
+    name: 'Unit Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6013948d-10ef-464b-965a-1e9662577afb: # Amount
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: amount
+    instructions: ''
+    name: Amount
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: unitIngredient
+name: 'Unit Ingredient'
+sortOrder: 3

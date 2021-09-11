@@ -1,0 +1,138 @@
+dateModified: 1631294017
+email:
+  fromEmail: abryrath@gmail.com
+  fromName: Recipes
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0b378b2e-772c-4f9f-88ce-2c622f66cc69: Units # Units
+    2add55ba-96e4-4f07-991c-f0aa3835d16d: Headline # Headline
+    6e2d25df-7769-4b54-ab25-4bb36302500d: Recipes # Recipes
+    6e395fd9-535e-4405-a13f-cad6188a386f: Units # Units
+    7bd3fb46-d00e-4767-b514-12a487d06433: Combine # Combine
+    7cb11227-0282-43c2-bf1b-9dffdfd2bcce: 'Ingredient List' # Ingredient List
+    7fe68fa3-b634-4f07-8151-257e73231dc0: 'Meal Categories' # Meal Categories
+    9d461848-1842-4099-9fa2-22364ee20d84: 'Meal Times' # Meal Times
+    19ae9336-f0f1-4ceb-b8d1-a1937d796689: Headline # Headline
+    25d1ceb4-d63e-470e-9149-e7bf07e1481e: Ingredients # Ingredients
+    33bf66e5-37aa-4f6e-9391-2bc4aa2f3b9d: Ingredient # Ingredient
+    69d0ce7b-6cbe-4958-a5e6-c684115c9bbd: 'Meal Categorization' # Meal Categorization
+    89af21a3-371c-49a9-905c-c672024cff58: 'Unit Ingredient' # Unit Ingredient
+    90d32663-4f7e-492f-a927-a463a2e04112: Process # Process
+    00286cc1-f7d3-4329-825e-c4fbe40c1ee6: 'Estimated Time' # Estimated Time
+    393b3614-4a19-445b-ad84-aa7b1a20df1e: Amount # Amount
+    510f623a-9194-48b9-8f3f-064061ca28b7: 'Public Schema' # Public Schema
+    555ef10e-e1c7-411b-9772-ced8bf292d86: Default # Default
+    20617bbb-1b72-4f52-ac7c-b167e18fb159: 'Meal Times' # Meal Times
+    36603fe6-3b71-4982-9e34-62d903aee2f0: 'Meal Categories' # Meal Categories
+    49967c47-7fc0-4ac4-8510-4956009cba1a: 'Unit Name' # Unit Name
+    192710f4-bae5-448e-9bc1-da6413aac4af: 'Estimated Time' # Estimated Time
+    0849272b-2921-4575-a21f-0885decc7bba: Common # Common
+    6013948d-10ef-464b-965a-1e9662577afb: Amount # Amount
+    19205542-db3e-4196-bff1-bad58e5c3ef6: Cook # Cook
+    a0eceee7-4254-49c9-9c53-fafba11a5dbe: 'Meal Seasons' # Meal Seasons
+    a0199e8b-03c6-4a1d-98d3-490426d22984: Headline # Headline
+    ac78feee-0235-4739-a530-b0b76293deaf: Recipes # Recipes
+    af59138f-4b12-4bbb-8929-51b8ec0ce836: 'Volume Ingredient' # Volume Ingredient
+    b97dd982-ca17-4db0-bcc2-3a62893dc8f7: Instructions # Instructions
+    bcb78bb0-43ec-420a-b880-eb82f0770ef0: Recipes # Recipes
+    bd39be8c-03d2-4839-8f3a-a201b9060feb: Ingredient # Ingredient
+    c75b5e36-4248-4b91-a5ec-4a22ee3efa80: 'Meal Seasons' # Meal Seasons
+    cf3baef0-f6b7-44ce-af40-6764fe8d10e3: 'Estimated Time' # Estimated Time
+    e3be41ee-b92f-4c00-8b1e-e3352519269a: Ingredient # Ingredient
+    e61e9c58-68c1-4cfd-8ee6-987302b188f6: Amount # Amount
+    eac80011-368f-43fb-a615-f08ed89e010b: Instructions # Instructions
+    ef824be9-843f-4955-b729-9f7439695f31: Instructions # Instructions
+    f04410ef-1923-4d45-ad01-3d0c9e50a791: Prepare # Prepare
+    f9b8193a-ad4f-4e05-9d68-48f91dcbbb65: 'Weight Ingredient' # Weight Ingredient
+    fab1f74a-6622-488f-ada5-11f720ca156e: Default # Default
+    feafab11-b292-4512-9296-d95fa4072bd0: Recipes # Recipes
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
+  blitz:
+    edition: standard
+    enabled: true
+    licenseKey: 1CKQ9XDUE4Q9R82REZHQN9G7
+    schemaVersion: 3.10.0
+    settings:
+      apiKey: ''
+      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
+      cacheDuration: null
+      cacheElementQueries: true
+      cacheElements: true
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cacheStorageSettings:
+        __assoc__:
+          -
+            - folderPath
+            - '@webroot/cache/blitz'
+          -
+            - createGzipFiles
+            - ''
+          -
+            - createBrotliFiles
+            - ''
+      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
+      cacheWarmerSettings:
+        __assoc__:
+          -
+            - concurrency
+            - '3'
+      cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
+      cachingEnabled: '1'
+      clearCacheAutomatically: '1'
+      customSiteUris: ''
+      debug: false
+      deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
+      driverJobPriority: 100
+      excludedQueryStringParams:
+        - gclid
+        - fbclid
+      excludedUriPatterns: ''
+      includedQueryStringParams:
+        - '.*'
+      includedUriPatterns:
+        -
+          __assoc__:
+            -
+              - uriPattern
+              - './*'
+      injectScriptEvent: DOMContentLoaded
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
+        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
+      maxRetryAttempts: 10
+      mutexTimeout: 1
+      outputComments: true
+      queryStringCaching: '0'
+      queueJobTtr: 300
+      refreshCacheAutomaticallyForGlobals: true
+      refreshCacheJobPriority: 10
+      refreshCacheWhenElementSavedNotLive: false
+      refreshCacheWhenElementSavedUnchanged: false
+      sendPoweredByHeader: true
+      warmCacheAutomatically: '1'
+      warmPagesWithQueryStringParams: true
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  related:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: Recipes
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

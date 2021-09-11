@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  75505f27-1835-4c7a-b8ff-69291efa357f:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: mealCategories
+name: 'Meal Categories'
+siteSettings:
+  6e2d25df-7769-4b54-ab25-4bb36302500d: # Recipes
+    hasUrls: true
+    template: null
+    uriFormat: 'meal-categories/{slug}'
+structure:
+  maxLevels: null
+  uid: 9ddcc3d1-0f40-4c0f-8e7e-13de8878dec3
